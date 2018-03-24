@@ -1,0 +1,328 @@
+{\rtf1\ansi\ansicpg936\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Medium;\f1\fnil\fcharset0 HelveticaNeue;\f2\fswiss\fcharset0 Helvetica;
+\f3\fnil\fcharset134 STHeitiSC-Light;\f4\fnil\fcharset134 PingFangSC-Regular;\f5\fnil\fcharset134 .PingFangSC-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+{\*\expandedcolortbl;;\cssrgb\c27059\c27059\c27059;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18640\viewh13260\viewkind0
+\deftab560
+\pard\pardeftab560\partightenfactor0
+
+\f0\fs34 \cf2 \'b7\'fe\'ce\'f1\'b6\'cb\'bf\'aa\'b7\'a2\'bb\'b7\'be\'b3\'c5\'e4\'d6\'c3
+\f1\fs24 \
+\pard\pardeftab560\sa40\partightenfactor0
+
+\b\fs28 \cf2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f2 \cf0 1. docker
+\f3 \'bb\'f9\'b1\'be\'d6\'b8\'c1\'ee
+\f2\b0\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f4 \cf0 \'b4\'b4\'bd\'a8\'d0\'c2\'c8\'dd\'c6\'f7
+\f2 		docker run -d \'97name 
+\f4 \'c8\'dd\'c6\'f7\'c3\'fb\'b3\'c6
+\f2  
+\f4 \'be\'b5\'cf\'f1\'c3\'fb\'b3\'c6
+\f2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f3 \cf0 \'c1\'d0\'b3\'f6\'cb\'f9\'d3\'d0\'b5\'c4\'be\'b5\'cf\'f1
+\f2 		docker image\
+
+\f3 \'c1\'d0\'b3\'f6\'cb\'f9\'d3\'d0\'b5\'c4\'c8\'dd\'c6\'f7
+\f2 		docker ps -a\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf0 \expnd0\expndtw0\kerning0
+\'b2\'e9\'bf\'b4\'c8\'dd\'c6\'f7\'d0\'c5\'cf\'a2
+\f2 	 docker inspect 
+\f3 \'c8\'dd\'c6\'f7
+\f2 ID\kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f3 \cf0 \'bd\'f8\'c8\'eb\'d4\'cb\'d0\'d0\'d6\'d0\'b5\'c4\'c8\'dd\'c6\'f7
+\f2 	docker exec -t -i 
+\f3 \'c8\'dd\'c6\'f7
+\f2 ID bash\
+
+\f3 \'cd\'a3\'d6\'b9\'c8\'dd\'c6\'f7
+\f2 			docker stop 
+\f3 \'c8\'dd\'c6\'f7
+\f2 ID\
+
+\f3 \'c6\'f4\'b6\'af\'c8\'dd\'c6\'f7
+\f2 			docker start 
+\f3 \'c8\'dd\'c6\'f7
+\f2 ID\
+
+\f3 \'c9\'be\'b3\'fd\'c8\'dd\'c6\'f7
+\f2 			docker rm 
+\f3 \'c8\'dd\'c6\'f7
+\f2 ID\
+
+\f3 \'c9\'be\'b3\'fd\'be\'b5\'cf\'f1
+\f2 			docker mi 
+\f3 \'be\'b5\'cf\'f1
+\f2 ID\
+
+\f3 \'c9\'be\'b3\'fd\'c8\'ab\'b2\'bf\'cd\'a3\'d6\'b9\'c8\'dd\'c6\'f7
+\f2 	\expnd0\expndtw0\kerning0
+docker rm $(docker ps -a -q)\
+
+\f3 \kerning1\expnd0\expndtw0 \'c9\'be\'b3\'fd\'c8\'ab\'b2\'bf\'be\'b5\'cf\'f1
+\f2 \expnd0\expndtw0\kerning0
+		docker rmi $(docker images -q)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f3 \cf0 \'cc\'e1\'bd\'bb\'d0\'de\'b8\'c4\'b9\'fd\'b5\'c4\'c8\'dd\'c6\'f7
+\f2 	docker commit 
+\f3 \'c8\'dd\'c6\'f7
+\f2 ID 
+\f3 \'be\'b5\'cf\'f1\'c3\'fb\'b3\'c6
+\f2 \
+
+\f3 \'cc\'e1\'bd\'bb\'d0\'de\'b8\'c4\'b9\'fd\'b5\'c4\'be\'b5\'cf\'f1
+\f2 	docker push 
+\f3 \'be\'b5\'cf\'f1\'c3\'fb
+\f2 \
+
+\f3 \'be\'b5\'cf\'f1\'d6\'d8\'c3\'fc\'c3\'fb
+\f2 		docker tag 
+\f3 \'be\'b5\'cf\'f1
+\f2 ID 
+\f3 \'be\'b5\'cf\'f1\'c3\'fb
+\f2 \
+
+\f3 \'bb\'f1\'c8\'a1\'be\'b5\'cf\'f1
+\f2 			docker pull 
+\f3 \'be\'b5\'cf\'f1\'c3\'fb
+\f2 \
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f1\b\fs28 \cf2 \kerning1\expnd0\expndtw0 \
+2.
+\f4 \'c6\'f4\'b6\'af\'b7\'fe\'ce\'f1
+\f5\b0\fs24 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 \'d4\'cb\'d0\'d0\'d2\'bb\'cf\'c2\'c3\'fc\'c1\'ee\'d2\'c0\'b4\'ce\'b0\'b2\'d7\'b0
+\f1 mongo
+\f5 \'a1\'a2
+\f1 redis
+\f5 \'a1\'a3
+\f1 \
+docker run -d -p 27017:27017 --name mongodb mongo --auth\
+docker run -d -p 6379:6379 --name redis  redis\
+\
+docker run -d -p 27017:27017 -v /data/mongo:/data/db --name mongodb 192.168.221.45:5000/mongo --auth\
+docker run -d -p 6379:6379 --name redis 192.168.221.45:5000/redis\
+\
+docker run -ti --name node -p 3010:3010 -p 3100:3100 -p 3101:3101 -p 4001:4001 -p 31017:31017 -p 31027:31027 -p 31037:31037 -p 31047:31047 -v /work:/work --link mongodb:mongodb --link redis:redis 192.168.221.45:5000/node\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\b\fs28 \cf2 3.
+\f0\b0 \'ca\'fd\'be\'dd\'bf\'e2\'c5\'e4\'d6\'c3
+\f1\b \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5\b0\fs24 \cf2 \'bd\'f8\'c8\'eb
+\f1 mongo
+\f5 \'d0\'e9\'c4\'e2\'bb\'fa
+\f1 \
+docker exec -t -i mongodb mongo\
+
+\f5 \'bd\'f8\'c8\'eb
+\f1 mongo
+\f5 \'c3\'fc\'c1\'ee\'c4\'a3\'ca\'bd
+\f1 \
+
+\f5 \'d4\'cb\'d0\'d0
+\f1 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 use admin\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5 \cf2 \'b4\'b4\'bd\'a8\'b9\'dc\'c0\'ed\'d4\'b1
+\f1 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 db.createUser
+\f5 (
+\f1 \'a0\{\'a0user: "admin"
+\f5 ,
+\f1 \'a0pwd: "6Wq9ZI8tq7lgV85e"
+\f5 ,
+\f1 \'a0roles: 
+\f5 [
+\f1  \{ role: "userAdminAnyDatabase"
+\f5 ,
+\f1  db: "admin" \} 
+\f5 ]
+\f1 \'a0\}\'a0
+\f5 )
+\f1 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5 \cf2 \'ca\'b9\'d3\'c3\'b9\'dc\'c0\'ed\'d4\'b1\'ca\'da\'c8\'a8
+\f1 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 db.auth
+\f5 (
+\f1 'admin'
+\f5 ,
+\f1  '6Wq9ZI8tq7lgV85e'
+\f5 )
+\f1 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5 \cf2 \'b4\'b4\'bd\'a8
+\f1 Root
+\f5 \'d3\'c3\'bb\'a7
+\f1 \
+db.createUser
+\f5 (
+\f1 \'a0\{user:\'a0"root"
+\f5 ,
+\f1 pwd:\'a0"K0HuO5gvbYTgDJaM"
+\f5 ,
+\f1 roles:\'a0
+\f5 [
+\f1 \'a0\{\'a0role:\'a0"root"
+\f5 ,
+\f1 \'a0db:\'a0"admin"\'a0\}\'a0
+\f5 ]
+\f1 \}
+\f5 );
+\f1 \
+
+\f5 \'ca\'b9\'d3\'c3
+\f1 Root
+\f5 \'ca\'da\'c8\'a8
+\f1 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 db.auth
+\f5 (
+\f1 'root'
+\f5 ,
+\f1  'K0HuO5gvbYTgDJaM'
+\f5 )
+\f1 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5 \cf2 \'b4\'b4\'bd\'a8\'bf\'e2
+\f1 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 use Game\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5 \cf2 \'b4\'b4\'bd\'a8\'bf\'e2\'d3\'c3\'bb\'a7
+\f1 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 db.createUser
+\f5 (
+\f1 \{user:'Game'
+\f5 ,
+\f1 pwd:'ALbbhxeGO0nwkyLX'
+\f5 ,
+\f1 roles:
+\f5 [
+\f1 \{role:'readWrite'
+\f5 ,
+\f1 db:'Game'\}
+\f5 ]
+\f1 \}
+\f5 )
+\f1 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5 \cf2 \'b4\'b4\'bd\'a8\'bf\'e2
+\f1 \
+use logs\
+
+\f5 \'b4\'b4\'bd\'a8\'bf\'e2\'d3\'c3\'bb\'a7
+\f1 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 db.createUser
+\f5 (
+\f1 \{user:'logs'
+\f5 ,
+\f1 pwd:'JEpxQs7pfGyXawUB'
+\f5 ,
+\f1 roles:
+\f5 [
+\f1 \{role:'readWrite'
+\f5 ,
+\f1 db:'logs'\}
+\f5 ]
+\f1 \}
+\f5 )\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f1\b\fs28 \cf2 4.
+\f0\b0 \'c4\'da\'b4\'e6\'ca\'fd\'be\'dd\'bf\'e2\'c5\'e4\'d6\'c3
+\f1\b \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5\b0\fs24 \cf2 \'c6\'f4\'b6\'afchess\'b7\'fe\'ce\'f1\'c6\'f7\
+docker run -ti --name chess -p 3010:3010 -p 3100:3100 -p 3101:3101 -p 4001:4001 -v e:/work:/work --link mongodb:mongodb --link redis:redis node\
+\'bd\'f8\'c8\'ebchess\'bb\'b7\'be\'b3\
+docker exec 
+\f1 -
+\f5 ti chess bash\
+\'b0\'b2\'d7\'b0\'c4\'da\'b4\'e6\'ca\'fd\'be\'dd\'bf\'e2\
+cd /work\
+npm install 
+\f1 -
+\f5 g git+http://gitlab.369.com/zhipeng/memdb.git\
+\'c6\'f4\'b6\'af\'c4\'da\'b4\'e6\'ca\'fd\'be\'dd\'bf\'e2\
+cd /work/memdb\
+./bin/memdbcluster start\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f1\b\fs28 \cf2 5.
+\f4 \'c8\'d5\'d6\'be\'b7\'fe\'ce\'f1\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5\b0\fs24 \cf2 \'d4\'dachess\'c8\'dd\'c6\'f7\'c4\'da\
+cd /work\
+git clone http://gitlab.369.com/zhipeng/pomelo-udp-logger.git\
+\'c6\'f4\'b6\'af\'b7\'fe\'ce\'f1\
+cd /work/pomelo-udp-logger\
+NODE_ENV=development node app\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f1\b\fs28 \cf2 \
+6.
+\f4 \'b9\'dc\'c0\'ed\'b7\'fe\'ce\'f1\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5\b0\fs24 \cf2 \'d4\'dachess\'c8\'dd\'c6\'f7\'c4\'da\
+cd /work\
+git clone http://gitlab.369.com/zhipeng/pomelo-admin-web.git\
+\'c6\'f4\'b6\'af\'b7\'fe\'ce\'f1\
+cd /work/pomelo-admin-web\
+NODE_ENV=development node app\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f1\b\fs28 \cf2 7.
+\f4 \'d3\'ce\'cf\'b7\'c2\'df\'bc\'ad\'b7\'fe\'ce\'f1
+\f1 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5\b0\fs24 \cf2 \'c6\'f4\'b6\'af\
+docker run -ti --name chess  -p 3010:3010 -p 3100:3100 -p 3101:3101 -p 4001:4001 -p 3001:3001 -p 3002:3002 -p 5000:5000 -p 5870:5870 -p 5871:5871 -p 5100:5100 -p 5101:5101 -p 5860:5860 -p 5880:5880 -p 5881:5881 -p 5890:5890 -p 5891:5891 -p 5900:5900 -p 5901:5901 -p 5910:5910 -p 5911:5911   -p 13100:13100 -p 13101:13101 -p 22:22  -p 6010:6010 -p 6011:6011 -v e:/work:/work 192.168.221.45:5000/node\
+\
+\'d4\'dachess\'c8\'dd\'c6\'f7\'c4\'da\
+cd /work\
+git clone http://gitlab.369.com/zhipeng/chess-server.git\
+\'c6\'f4\'b6\'af\'b7\'fe\'ce\'f1\
+cd /work/chess-server\
+NODE_ENV=development node app\
+}
